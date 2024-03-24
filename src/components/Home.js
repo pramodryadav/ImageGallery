@@ -6,7 +6,7 @@ import img3 from './images/img3.jpg'
 
 function Home() {
   return (
-    <div className='container'>
+    <div className='container p-5'>
       <div className='homeImg'>
       <img src={img} alt="" />
       <img src={img1} alt="" />

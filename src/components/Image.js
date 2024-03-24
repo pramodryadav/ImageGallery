@@ -4,7 +4,7 @@ import img1 from './images/img1.jpg'
 import img2 from './images/img2.jpg'
 import img3 from './images/img3.jpg'
 function Image() {
-  let imgArray=[img,img1,img2,img3];
+  let imgArray=[img,img1,img2,img3,img,img1,img2,img3];
   const [srrc,setSrrc]=useState(img);
   
   return (
@@ -13,7 +13,7 @@ function Image() {
         <img src={srrc} alt="img"/>
       </div>
       <div className='imgContainer'>
-      {imgArray.map((src,index)=><img key={index} src={src} alt="img"  onClick={(e)=>setSrrc(e.target.src)}/>)}
+      {imgArray.map((src,index)=><img key={index} className='' src={src} alt="img"  onClick={(e)=>setSrrc(e.target.src)}/>)}
       </div>
     </>
 

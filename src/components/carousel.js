@@ -4,7 +4,7 @@ import img1 from './images/img1.jpg'
 import img2 from './images/img2.jpg'
 import img3 from './images/img3.jpg'
 
-function Navbar() {
+function Carousel() {
 
   let imgArray=[img,img1,img2,img3];
   const [srrc,setSrrc]=useState();
@@ -32,7 +32,7 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Carousel
 
 
 

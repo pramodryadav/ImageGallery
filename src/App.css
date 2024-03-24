@@ -1,47 +1,85 @@
 .App {
   text-align: center;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
-.imgContainer{
+
+.imgContainer {
   margin: 20px 50px;
-  display: flex;
-  overflow-x: scroll;
- 
-  
-  
+  position: relative;
+  padding: 0px 30px;
+
 }
-.imgContainer img{
+
+.scrollBtn {
+  background-color: gray;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 20px;
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  box-shadow: 2px 3px 5px 2px rebeccapurple;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.scroll-images {
+  position: relative;
+
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+
+.scroll-images img {
   max-width: 25%;
   border: 1px solid black;
-  
-  margin: 0 5px; /* Adjust as needed */
+  margin: 0 5px;
   cursor: pointer;
-  
-border-radius: 4px;
+  border-radius: 4px;
+
 }
-.ShowImage{
+
+.ShowImage {
 
   margin: auto;
-  max-width:50%;
+  max-width: 50%;
   height: auto;
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px;
 
 }
-.ShowImage img{
+
+.ShowImage img {
   width: 100%;
   height: auto;
 }
-.homeImg img{
+
+.homeImg img {
   max-width: 100%;
   border: 1px solid black;
   padding: 8px;
   border-radius: 4px;
   height: auto;
   margin: 5px;
-  
-}
 
+}
